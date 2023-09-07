@@ -3,9 +3,6 @@ class Solution:
         maxCount = 0
         
         for i in sentences:
-            temp = 0
-            for j in i.split():
-                temp+=1
-            maxCount = max(temp,maxCount)      
+            maxCount = max(maxCount,len(i.split()))      
         return maxCount
         
