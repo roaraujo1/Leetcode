@@ -4,7 +4,7 @@ class Solution:
         n = num
         while n:
             digit = n%10
-            print(digit)
+     
             if num%digit == 0:
                 count+=1
             n = n//10
