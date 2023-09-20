@@ -7,8 +7,7 @@ class Solution:
             if len(nums)==1:
                 output+= nums.pop()
             else:
-                temp = int(str(nums[left]) + str(nums[-1]))
+                temp = int(str(nums.pop(left)) + str(nums.pop()))
                 output+=temp
-                nums.pop(left)
-                nums.pop()
+            
         return output
