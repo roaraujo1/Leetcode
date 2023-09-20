@@ -2,7 +2,6 @@ class Solution:
     def findTheArrayConcVal(self, nums: List[int]) -> int:
         output = 0 
         left = 0
-        right = len(nums)-1
         
         while nums:
             if len(nums)==1:
